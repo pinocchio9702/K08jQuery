@@ -30,6 +30,8 @@
 						서버로 부터 콜백데이터가 json형태일때는 파싱을 위해
 						아래 함수를 사용해야 한다.
 						*/
+						
+						//ajax로 콜백데이터 형태가 json이라는 것을 알지만 get을 형식은 text로 고정되기 때문에 파싱을 해주어야 한다.
 						var rData = JSON.parse(responseData);
 						/*
 						파싱한 데이터를 통해 value에 접근할 수 있다.

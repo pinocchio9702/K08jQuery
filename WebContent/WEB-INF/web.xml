@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>K08jQuery</display-name>
+  
+  <!-- Naver검색 API 연동 매핑 -->
+  <servlet>
+  	<servlet-name>NaverSearchAPI</servlet-name>
+  	<servlet-class>naverapi.NaverSearchAPI</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>NaverSearchAPI</servlet-name>
+  	<url-pattern>/NaverSearchAPI.do</url-pattern>
+  </servlet-mapping><!--  요청명은 뭘로 시작한다구?? 슬러시로 시작하는군요...ㅎㅎ 죽는다...증말죄송합니다..열심히 공부하겠습니다.ㅎㅎ -->
+  
+  
+  
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
